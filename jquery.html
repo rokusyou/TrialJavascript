@@ -2,15 +2,19 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>Trial jQuery</title>
+    <title>jQueryの練習</title>
     <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body>
-    <h1>Trial jQuery</h1>
+    <h1>jQueryの練習</h1>
+    <button>ボタン</button>
     <script>
-        $(function() {
-            // jQueryのコードはこちらに
-        });
+      $(function() {
+          // btn click event
+          $('button').click(function() {
+              $('h1').css('color', 'green');
+          });
+      });
     </script>
 </body>
 </html>
